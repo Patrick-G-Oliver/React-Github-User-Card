@@ -2,37 +2,62 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a {
+  color: orangered;
+}
+
+h1, h2 {
+  color: orangered;
+  text-shadow: 0.5px 1px 3px yellow;
+}
+
+h2 { 
+  margin-top: 35px;
+}
+
+img {
+  border: 1.25px solid peru;
+  box-shadow: 0px 2.5px 5px 5px red;
+}
+
+.userCard, .followersCards {
+  background-color: #381812;
+  color: yellow;
+  border: 1.25px solid peru;
+  width: 40%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2.5px 15px 5px red;
+}
+
+.userCard {
+  margin: 0 auto;
+}
+
+.followersCards {
+  margin: 0 auto 35px auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .userCard, .followersCards {
+    width: 30%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (min-width: 900px) {
+  .userCard, .followersCards {
+    width: 20%;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .userCard, .followersCards {
+    width: 15%;
+  }
+}
+
+
