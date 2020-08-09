@@ -4,6 +4,7 @@ const FollowerCards = props => {
     return (
         <div>
             <h2>Followers</h2>
+            <div className="followersCardsWrapper">
             {props.followers.map(follower => (
                 <div className="followersCards">
                     <img width="130" src={follower.avatar_url} />
@@ -14,6 +15,7 @@ const FollowerCards = props => {
                     </p>
                 </div>
             ))}
+            </div>
         </div>
     )
 }

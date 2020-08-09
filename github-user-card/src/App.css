@@ -42,6 +42,12 @@ img {
   margin: 0 auto 35px auto;
 }
 
+.followersCardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 600px) {
   .userCard, .followersCards {
     width: 30%;
